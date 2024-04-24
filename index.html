@@ -10,38 +10,49 @@
     </head>
     <body>
         <header class="header">
-            <div class="wrapper">
-                <a href="#" class="logo">Logo</a>
+            <div class="wrapper header__wrapper">
+                <a href="" class="logo">
+                    <object data="image/logo/logo.svg" type="image/svg+xml" class="logo-object">
+                        Your browser does not support SVG
+                    </object>
+
+                </a>
                 <nav class="header__navigation">
                     <ul class="navigation">
-                        <li>Home</li>
-                        <li>Home</li>
-                        <li>Home</li>
-                        <li>Home</li>
+                        <li class="navigation__link">Home</li>
+                        <li class="navigation__link">Services</li>
+                        <li class="navigation__link">About</li>
+                        <li class="navigation__link">Product</li>
                     </ul>
-                    <div class="header__buttons">
-                        <button class="button button_bordered">Sign In</button>
-                        <button class="button button_colored">Sign Up</button>
-                        
-                    </div>
+                    
                 </nav>
+                <div class="header__buttons">
+                    <button class="button button_bordered">Sign In</button>
+                    <button class="button button_colored">Sign Up</button>
+                    
+                </div>
             </div>
            
 
 
         </header>
-        <section class="Content">
-            <div class="wrapper">
+        <section class="promo">
+            <div class="wrapper promo__wrapper">
                 <div class="promo__content">
-                    <h1>The Design thinking superpowers</h1>
-                    <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                    <h1 class="promo__title">The Design Thinking superpowers</h1>
+                    <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most
+                        intuitive way to imagine your next user experience.</p>
                     <div class="promo__buttons">
                         <button class="button button_colored">Get started</button>
-                        <a href="link-button">
-                            <span class="ico ico_play"></span> Watch the video
+                        <a href="#" class="link-button">
+                            <span class="icon icon_play"></span>
+                            <span class="link-button_text">Watch the Video</span>
                         </a>
                     </div>
                 </div>
+    
+    
+                <img src="image/strategies/promo/promo.png" class="promo__image" alt="The Design Thinking superpowers">
             </div>
         </section>
         <section class="Tools">
