@@ -1,8 +1,17 @@
 @import "abstract/constatnts";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+
+@import "base/normalize.scss";
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
+@import "base/icons.scss";
 
 @import "layouts/wrapper";
-@import "componets/contact-us";
 @import "layouts/header";
+@import "layouts/columns.scss";
+
 @import "componets/promo";
+@import "componets/navigation.scss";
+@import "componets/contact-us";

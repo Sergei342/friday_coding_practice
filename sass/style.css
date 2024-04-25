@@ -1,3 +1,7 @@
+.navigation__link, .logo-path {
+  transition: all 0.3s ease-out;
+}
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -409,44 +413,52 @@ section, main, article, footer, header {
   box-sizing: border-box;
 }
 
-.logo-path, .block2, .bloc1 {
-  transition: all 0.3s ease-out;
-}
-
 html {
   font-size: 10px;
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Open Sans", Verdana, Sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.6rem;
 }
 
 h1 {
   font-size: "Poopins", Verdana, sans-serif;
-  font-weight: bold;
+  font-size: 4.4rem;
   font-style: normal;
+  font-weight: bold;
+  line-height: 5.4rem;
 }
 
 h2 {
+  font-size: 3.4rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 46px;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.4rem;
 }
 
 h4 {
+  font-size: 2.2rem;
   font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 30px;
+  font-weight: bold;
+  line-height: 3rem;
 }
 
 h5 {
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 26x;
+  line-height: 2.6rem;
 }
 
 .button {
@@ -460,31 +472,51 @@ h5 {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .button_bordered {
   background: #ffffff;
   border: 1px solid #D7D7D7;
   color: #544837;
 }
-
+.button_bordered:hover {
+  background: #F5F5F5;
+  border-color: #F5F5F5;
+}
 .button_colored {
   background: #ff9900;
   color: #ffffff;
   border: 1px solid #ff9900;
 }
-
-.button_colored:hover {
-  background: #F5F5F5;
-  border-color: #F5F5F5;
-}
-
-.button_bordered :hover {
+.button_colored :hover {
   background: #BCD0E5;
   border-color: #BCD0E5;
 }
 
-.logo-svg:hover .logo-path {
+.link-button {
+  color: #ff9900;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-button_text {
+  margin-left: 9px;
+}
+
+.logo-svg:hover {
+  cursor: pointer;
+}
+.logo-svg:hover:hover .logo-path {
   fill: #ff9900;
+}
+
+.icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon_play {
+  background-image: url(/image/strategies/icons/play.svg);
+  width: 18px;
+  height: 19px;
 }
 
 .wrapper {
@@ -525,8 +557,13 @@ h5 {
   cursor: pointer;
 }
 
-.contact-us {
-  background: #FFEEE1;
+.layout-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-column > * {
+  flex-basis: 21%;
 }
 
 .promo {
@@ -547,8 +584,36 @@ h5 {
   margin-right: 44px;
 }
 
-.promo__title {
-  margin: 0 0 0 30px;
+.promo-title {
+  margin-right: 0 0 30px;
+}
+
+.promo__text {
+  max-width: 487px;
+  margin: 0 0 45px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.navigation__link:hover {
+  color: #ff9900;
+}
+
+.contact-us {
+  background: #FFEEE1;
 }
 
 /*# sourceMappingURL=style.css.map */

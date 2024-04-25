@@ -8,31 +8,36 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all .3s;
+    &_bordered  { 
+        background: $color-light;
+        border: 1px solid $color-border;
+        color: $color-text;
+        &:hover { 
+            background: $color-additional;
+            border-color: $color-additional;
+        }
+    }
+    &_colored {
+        background: $color-brand;
+        color: $color-light;
+        border: 1px solid $color-brand ;
+        & :hover { 
+          
+
+            background: $color-hover;
+            border-color: $color-hover;
+            
+        }
+    }
 }
 
-.button_bordered {
-    background: $color-light;
-    border: 1px solid $color-border;
-    color: $color-text;
-
-
-}
-
-.button_colored { 
-background: $color-brand;
-color: $color-light;
-border: 1px solid $color-brand ;
-
+.link-button { 
+    color: $color-brand;
+    display: inline-flex;
+    align-items: center;
 
 }
 
-.button_colored:hover {
-    background: $color-additional;
-    border-color: $color-additional;
-
-}
-.button_bordered :hover {
-    background: $color-hover;
-    border-color: $color-hover;
-
+.link-button_text { 
+    margin-left: 9px;
 }

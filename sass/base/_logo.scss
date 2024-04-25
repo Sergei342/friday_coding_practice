@@ -1,9 +1,12 @@
 .logo-path {
-    @extend%transition;
+    @extend %transition;
 }
 
 .logo-svg:hover {
-    .logo-path {
-        fill: $color-brand;
+    cursor: pointer;
+    &:hover {
+        .logo-path {
+            fill: $color-brand;
+        }
     }
 }
