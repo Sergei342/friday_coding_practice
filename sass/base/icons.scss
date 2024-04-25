@@ -8,3 +8,22 @@
     width: 18px;
     height: 19px;
 }
+
+.icon-square { 
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: inline-block;
+    &_yellow { 
+        background-color: $color-yellow;
+    }
+    &_red { 
+        background-color: $color-red;
+    }
+    &_blue { 
+        background-color: $color-blue;
+    }
+    &_lilium { 
+        background-color: $color-violet;
+    }
+}
