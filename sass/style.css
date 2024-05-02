@@ -735,14 +735,41 @@ h5 {
   margin: 0 0 14px;
 }
 
+.employee {
+  display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - 32px);
+}
+
+.employee-container {
+  padding-right: 32px;
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  margin: 0;
+}
+
+.employee__contact {
+  color: #1943EF;
+}
+
 .about-us__description {
   margin: 0 0 45px;
 }
 
-.employer__photo {
+.employee__photo {
   width: 98px;
   height: 98px;
   border-radius: 50%;
+  position: absolute;
+  right: -32px;
+  top: 20px;
+  box-shadow: 0px 15px 30px 0, 0, 0, 0.15;
 }
 
 /*# sourceMappingURL=style.css.map */
